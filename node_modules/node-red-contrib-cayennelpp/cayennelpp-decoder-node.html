@@ -1,0 +1,28 @@
+<script type="text/javascript">
+  RED.nodes.registerType('cayennelpp-decoder', {
+    category: 'function',
+    color: '#a6bbcf',
+    defaults: {
+      name: {
+        value: ""
+      }
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "function.png",
+    label: function() {
+      return this.name || "cayennelpp-decoder";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="cayennelpp-decoder">
+  <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="cayennelpp-decoder">
+  <p>A node that decodes payloads in CayenneLPP format into JSON</p>
+</script>
